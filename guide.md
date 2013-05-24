@@ -54,7 +54,7 @@ If your design elements have any part of them that can fluidly expand . Usually,
 	- Badge background asset that can be stretched:
 	- [sidebar_badge.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_badge.png)
 	- Stretch Insets: (3pt, 2pt, 5pt, 2pt)
-	- [![example](tree/master/Examples/stretchable_example.png)]
+	- ![example](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/stretchable_example.png)
 	- Notice how the middle portion of this asset has a lot of visual information that repeats. As a result, the asset can be reduced in width so that we have a 1 point (2px) slice of the asset that we will stretch when the asset expands.
 
 #### Tiling Assets
@@ -100,8 +100,8 @@ If you are slicing buttons, cell backgrounds, or any other UI elements with diff
 
 ### Redlining & Speccing
 #### Examples
-![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.png)
-![example-2](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/2_feed+REDLINES.png)
+- ![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.jpg)
+- ![example-2](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/2_feed+REDLINES.jpg)
 
 #### Positioning & Margin
 
@@ -115,5 +115,6 @@ In order to describe the font style being used within each text area, simply add
 When outlining the size and position of how to use an asset, you should account for the translucent/transparent areas within the assets.
 
 - Example
-	- Notice how the badge outline withint he sidebar has extra spacing outside of the shape that is reflected within the asset: ![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.png)
+	- Notice how the badge outline withint he sidebar has extra spacing outside of the shape that is reflected within the asset: 
 	- ![sidebar_badge.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_badge.png)
+	- ![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.jpg)
