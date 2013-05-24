@@ -78,8 +78,8 @@ In our development process, I’ve found it helpful to follow the subsequent pat
 
 - Example:
 	- For assets specific to a screen, such as the normal and pressed states for the icons in the sidebar, they should be named as:
-	- [sidebar_ic_tweets_normal.png](.../Assets/sidebar_ic_tweets_normal.png)
-	- [sidebar_ic_tweets_pressed.png](.../Assets/sidebar_ic_tweets_pressed.png)
+	- [sidebar_ic_tweets_normal.png](/Assets/sidebar_ic_tweets_normal.png)
+	- [sidebar_ic_tweets_pressed.png](/Assets/sidebar_ic_tweets_pressed.png)
 
 #### Some helpful shorthands:
 - Icon: **ic**
@@ -100,8 +100,8 @@ If you are slicing buttons, cell backgrounds, or any other UI elements with diff
 
 ### Redlining
 #### Examples
-	- ![[example-1](/Examples/1_sidebar+REDLINES.png)
-	- ![[example-2](/Examples/2_feed+REDLINES.png)
+![[example-1](/Examples/1_sidebar+REDLINES.png)
+![[example-2](/Examples/2_feed+REDLINES.png)
 
 #### Text Areas
 To describe how to Both iOS and Android render fonts slightly differently than Photoshop. When designing with system fonts this isn't too much of an issue, however this can become troublesome when importing custom fonts. 
