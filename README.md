@@ -5,16 +5,22 @@ To bridge this gap at Two Toasters, designers are tasked with building out desig
 
 #### The Project
 For the purposes of this guide, I’ve designed two screens for a fake Twitter iOS app called hootie.
-Sidebar: http://invis.io/HKEL55BS
-Tweet Feed: http://invis.io/AREL58WZ
-Assets + Design Spec delivered to dev:
+
+- Mockups
+	- [Sidebar](http://invis.io/HKEL55BS)
+	- [Tweet Feed](http://invis.io/AREL58WZ)
+- Deliverables
+	- [Design Spec](https://github.com/aditshukla/mobile-design-spec/blob/master/design-spec-example.md)
+	- [Assets](https://github.com/aditshukla/mobile-design-spec/tree/master/assets)
+	- Redlined Mockups:
+		- [1.Sidebar+REDLINE](http://invis.io/6KEL57UT)
+		- [2.Following+REDLINES](http://invis.io/TQEL5BXN)
 
 #### Resources Used
-- PSD: https://www.dropbox.com/s/6ys3lonkp1b7r9c/redline.psd
+- [PSD](https://www.dropbox.com/s/6ys3lonkp1b7r9c/redline.psd)
 	- I’ve found it much easier to design all screens in a single PSD with a combinaton of smart objects and layer comps.
 - Photoshop Scripts
-	- Measure and fill the dimensions from a marquee: https://gist.github.com/yorb/5112285
-	- Measure the widest dimension and make a ruler from a marquee: https://gist.github.com/yorb/5042960
-- Github App
-	- http://mac.github.com/
+	- [Measure and fill the dimensions from a marquee](https://gist.github.com/yorb/5112285)
+	- [Measure the widest dimension and make a ruler from a marquee](https://gist.github.com/yorb/5042960)
+- [Github App](http://mac.github.com/)
 

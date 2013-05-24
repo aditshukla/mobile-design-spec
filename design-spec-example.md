@@ -11,35 +11,35 @@
 <a name="application-textstyles"></a>
 ##### Application Text Styles #####
 
-- $hootie-tweet-name: Helvetica Light Condensed / 12pt / ['$black'](#application-colors)
-- $hootie-tweet-handle: Helvetica Light Condensed / 12pt / ['$hootie-light-grey'](#application-colors)
-- $hootie-tweet-body: Helvetica Light / 16pt / ['$hootie-dark-grey'](#application-colors)
-- $hootie-big-white: Helvetica Light / 16pt / ['$white'](#white)
-- $hootie-condensed-light: Helvetica Light Condensed / 12pt / ['$white'](#application-colors)
+- $hootie-tweet-name: Helvetica Light Condensed / 12pt / [$black](#application-colors)
+- $hootie-tweet-handle: Helvetica Light Condensed / 12pt / [$hootie-light-grey](#application-colors)
+- $hootie-tweet-body: Helvetica Light / 16pt / [$hootie-dark-grey](#application-colors)
+- $hootie-big-white: Helvetica Light / 16pt / [$white](#white)
+- $hootie-condensed-light: Helvetica Light Condensed / 12pt / [$white](#application-colors)
 
 
 <a name="application-textstyles"></a>
 ##### Shared Design Stories #####
 - app bg: hootie-bg.png
 - navbar:
-	- background: ['$hootie-navbar'](#application-colors)
+	- background: [$hootie-navbar](#application-colors)
 
 <a name="1_sidebar"></a>
 ### 1. Sidebar ###
 #### Mockup ####
-['1.Sidebar'](#http://invis.io/HKEL55BS)
-['1.Sidebar+REDLINE'](#http://invis.io/6KEL57UT)
+[1.Sidebar](http://invis.io/HKEL55BS)
+[1.Sidebar+REDLINE](http://invis.io/6KEL57UT)
 
 #### Design Stories ####
-- background: 'sidebar-bg.png'
-- cell backgrounds: 'sidebar-div.png'
-	- pressed: ['$hootie-red'](#application-colors)
+- background: sidebar-bg.png
+- cell backgrounds: sidebar-div.png
+	- pressed: [$hootie-red](#application-colors)
 
 <a name="1_sidebar"></a>
 ### 2. Following ###
 #### Mockup #####
-['2.Following'](#http://invis.io/AREL58WZ)
-['2.Following+REDLINES'](#http://invis.io/TQEL5BXN)
+[2.Following](http://invis.io/AREL58WZ)
+[2.Following+REDLINES](http://invis.io/TQEL5BXN)
 
 #### Design Stories ####
-- tweet-bg: ['$white'](#application-colors)
+- tweet-bg: [$white](#application-colors)
