@@ -3,8 +3,10 @@ Trying to illustrate how to implement a design to a mobile developer can be quit
 
 To bridge this gap at Two Toasters, designers are tasked with building out design specifications which detail the various colors, fonts, and assets throughout the app. Furthermore, to guarantee that our designs are translated perfectly, we’ve adopted a process of red-lining our mockups that details information about layout and styling. The guide that follows describes the intricacies of how to relay some of this information and creating a complete design spec as detailed below.
 
+#### [The Guide](https://github.com/aditshukla/mobile-design-spec/blob/master/guide.md)
+
 #### The Project
-For the purposes of this guide, I’ve designed two screens for a fake Twitter iOS app called hootie.
+For the purposes of the guide, I designed two screens for a fake Twitter iOS app called hootie.
 
 - Mockups
 	- [Sidebar](http://invis.io/HKEL55BS)

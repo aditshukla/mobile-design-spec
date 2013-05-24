@@ -1,9 +1,37 @@
+## Outline
+- [Fonts & Colors](##fonts--colors)
+	- [Colors](#Colors)
+	- [Fonts](#Fonts)
+- [Slicing Assets](#slicing-assets)
+	- [When should you not slice an asset?](#when-should-you-not-slice-an-asset)
+	- [How should I slice for different resolutions?](#how-should-i-slice-for-different-resolutions)
+	- [Stretching Assets](#stretching-assets)
+	- [Tiling Assets](##tiling-assets)
+- [Naming Assets](#naming-assets)
+	- [Example Scheme](#example-scheme)
+	- [Some Helpful Shorthands](##some-helpful-shorthands)
+	- [State Suffixes](#state-suffixes)
+- [Redlining](#redlining)
+
 ### Fonts & Colors
 #### Colors
 It’s prudent to define variables for the colors that’ll be used throughout the application (these can translate directly with the color palette you use within the application). This allows you to easily tweak the colors throughout the application so that you maintain a consistent design language.
 
+- Example:
+	- $hootie-red: #ee2d24
+
+- Example:
+	- $white: #ffffff
+
 #### Fonts
-Like colors, 
+Like colors, defining them as variables can save you a lot of time if you need to adjust or look up any styles. In defining font styles, it's important to include font-family, font variation, size, color, shadow information and alignment information.
+
+- Example:
+	- $hootie-tweet-name: Helvetica Light Condensed / 12pt / [$hootie-red](#colors)
+
+- Example
+	- $fancy-text: Helvetica Regular / 12pt / [$hootie-red](#colors) / center-aligned
+		- shadow: '$white', opacity: 0.3, offset: 1pt down, radius: 1pt
 
 ### Slicing Assets
 Simply put, assets are the images needed to programmatically build out a design. Typically, this includes things that can’t be easily drawn programmatically such as background textures, icons, and complicated visual elements such as tool tip overlays. Image assets can also be used in lieu of drawable UI elements, such as shadows to get a pixel-perfect implementation of a design.
@@ -12,9 +40,10 @@ Simply put, assets are the images needed to programmatically build out a design.
 If you are not implementing a design through code yourself, answering this question will probably require communication with a developer. However, as a starting point, you can safely rely on the fact that if any part of your design just uses a solid color, it’s not necessary to slice it out. Moreover, if you’re using an icon font in your design (with no complex styling around them such as clipped gradients and inner shadows), its preferable to provide the font file to the developer in lieu of slicing out assets so they can be sharply rendered within the application.
 
 #### How should I slice for different resolutions?
+There's not a set formula for this, but I do have a preferred workflow. On iOS, I prefer to slice the 2x (retina) asset first using [UIrocket](#https://uirocket.com/). This gives me just the UI element with whatever combination of layers was required to create it in a new canvas sized to fit it. Next I ensure that the asset is sized with even pixels and has even padding if there are any translucent areas. This is to ensure that when I scale to 1x (non-retina), everything reduces down crisply and that my asset is sized exactly half in both dimensions of the retina asset. iOS uses the sizing of the 1x assets, so it is essential that both the retina and non-retina assets match.
 
-What file format should I save them in?
-You should provide most of your assets as PNGs as it is a lossless format. This ensures that the visual quality of the asset is not tampered with through compression. That being said, I suggest you run your PNGs–especially the ones that have a large file size–through tinypng to really optimize them.
+#### What file format should I save them in?
+You should provide most of your assets as PNGs as it is a lossless format. This ensures that the visual quality of the asset is not tampered with through compression. That being said, I suggest you run your PNGs–especially the ones that have a large file size–through [tinypng](http://tinypng.org/) to really optimize them.
 
 For larger assets–those that are dimensionally larger–such as backgrounds or screenshots that may not require transparency, it can be beneficial to save them as JPEGs instead. Much of the storage footprint of an application can be taken up by these larger images and the asset size can be easily compressed down by saving it them as JPEGs. When saving as a JPEG, it’s best to use your own judgement as to what quality level you should adjust to in order to get the best ratio of image size to quality. However, as a general rule of thumb, saving your asset as a JPEG at 70-80% quality will result in adequate savings with the size and not reduce the visual quality too much.
 
@@ -70,3 +99,5 @@ If you are slicing buttons, cell backgrounds, or any other UI elements with diff
 - (Android) When a user uses a scroll wheel to focuse on an element: focused
 
 ### Redlining
+#### Text Areas
+To describe how to Both iOS and Android render fonts slightly differently than Photoshop. When designing with system fonts this isn't too much of an issue, however this can become troublesome when importing custom fonts. 
