@@ -48,7 +48,7 @@ You should provide most of your assets as PNGs as it is a lossless format. This 
 For larger assets–those that are dimensionally larger–such as backgrounds or screenshots that may not require transparency, it can be beneficial to save them as JPEGs instead. Much of the storage footprint of an application can be taken up by these larger images and the asset size can be easily compressed down by saving it them as JPEGs. When saving as a JPEG, it’s best to use your own judgement as to what quality level you should adjust to in order to get the best ratio of image size to quality. However, as a general rule of thumb, saving your asset as a JPEG at 70-80% quality will result in adequate savings with the size and not reduce the visual quality too much.
 
 #### Stretching Assets
-If your design elements have any part of them that can fluidly expand . Usually, you should employ stretchable assets for elements such as buttons, table cells, badges, and pop-over/tooltip backgrounds. For iOS, to communicate how an asset should stretch, you must define insets for the part of the element that should not be stretched programmatically. These insets should be provided in points and detailed as ([Top], [Left], [Bottom], [Right]). This works well with UI elements that only have portions that don’t need to be stretched on the edge, but for tooltips and popovers that have . For Android, google provides a detailed tutorial on how to use 9patching to create stretchable assets here.
+If your design elements have any part of them that can fluidly expand, you should try to condense the asset and let the developer programatically stretch that portion of it. Usually, you should employ stretchable assets for elements such as buttons, table cells, badges, and pop-over/tooltip backgrounds. For iOS, to communicate how an asset should stretch, you must define insets for the part of the element that should not be stretched programmatically. These insets should be provided in points and detailed as ([Top], [Left], [Bottom], [Right]). This works well with UI elements that only have portions that don’t need to be stretched on the edge, but for tooltips and popovers that have complicated shapes (such as the quick actions in the hootie feed mockup) it's unlikely you'll be able to employ a stretchable asset.. For Android, google provides a detailed tutorial on how to use 9patching to create stretchable assets here.
 
 - Example: 
 	- Badge background asset that can be stretched:
@@ -104,7 +104,7 @@ If you are slicing buttons, cell backgrounds, or any other UI elements with diff
 - ![example-2](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/2_feed+REDLINES.jpg)
 
 #### Positioning & Margin
-
+Try to define any positioning information from the top and left edge, where possible. This is because the layouts are programatically positionined from the top and left edges of the screen. Moreover, to provide positioning information within a cell (such as the tweet cell in the example above), try to provided padding informating from the top and left edges of the cell where possible. You should only provide right/bottom positioning information to demonstrate padding or if an element is truly right or bottom aligned.
 
 #### Text Areas
 To describe how where to place text and the padding around it, you must work with the developer to determine how iOS is rendering the ascender height of a font. This is because a text element is positioned from the top and left edges of the box around the text. When designing with system fonts this isn't too much of an issue, however this can become troublesome when importing custom fonts as the ascender height can be seemingly arbitrary font to font. 
@@ -115,6 +115,5 @@ In order to describe the font style being used within each text area, simply add
 When outlining the size and position of how to use an asset, you should account for the translucent/transparent areas within the assets.
 
 - Example
-	- Notice how the badge outline withint he sidebar has extra spacing outside of the shape that is reflected within the asset: 
-	- ![sidebar_badge.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_badge.png)
-	- ![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.jpg)
+	- Notice how the badge outline within the sidebar has extra spacing outside of the shape that is reflected within the asset (above). 
+	 fonts--colors![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.jpg)
