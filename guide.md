@@ -52,7 +52,7 @@ If your design elements have any part of them that can fluidly expand . Usually,
 
 - Example: 
 	- Badge background asset that can be stretched:
-	- [sidebar_badge.png](https://github.com/aditshukla/mobile-design-spec/tree/master/assets/sidebar_badge.png)
+	- [sidebar_badge.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_badge.png)
 	- Stretch Insets: (3pt, 2pt, 5pt, 2pt)
 	- [![example](tree/master/Examples/stretchable_example.png)]
 	- Notice how the middle portion of this asset has a lot of visual information that repeats. As a result, the asset can be reduced in width so that we have a 1 point (2px) slice of the asset that we will stretch when the asset expands.
@@ -62,7 +62,7 @@ In the pursuit of further reducing the space your app takes, you should use a ti
 
 - Example
 	- sidebar_bg.png
-	- [![example](https://github.com/aditshukla/mobile-design-spec/tree/master/assets/sidebar_bg.png)]
+	- [![example](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_bg.png)]
 	- The texture I used for the sidebar background tiles every 128 pixels. As a result, I was able to cut out just a 64x64pt slice of the background asset that I can instruct the developer to tile in that view.
 
 ### Naming Assets
@@ -74,12 +74,12 @@ In our development process, I’ve found it helpful to follow the subsequent pat
 
 - Example:
 	- For assets that can be used throughout the application, such as the app background, it should be named as:
-[hootie_bg.png](https://github.com/aditshukla/mobile-design-spec/tree/master/assets/hootie_bg.png)
+[hootie_bg.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/hootie_bg.png)
 
 - Example:
 	- For assets specific to a screen, such as the normal and pressed states for the icons in the sidebar, they should be named as:
-	- [sidebar_ic_tweets_normal.png](https://github.com/aditshukla/mobile-design-spec/tree/master/assets/sidebar_ic_tweets_normal.png)
-	- [sidebar_ic_tweets_pressed.png](https://github.com/aditshukla/mobile-design-spec/tree/master/assets/sidebar_ic_tweets_pressed.png)
+	- [sidebar_ic_tweets_normal.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_ic_tweets_normal.png)
+	- [sidebar_ic_tweets_pressed.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_ic_tweets_pressed.png)
 
 #### Some helpful shorthands:
 - Icon: **ic**
@@ -100,8 +100,8 @@ If you are slicing buttons, cell backgrounds, or any other UI elements with diff
 
 ### Redlining & Speccing
 #### Examples
-![example-1](https://github.com/aditshukla/mobile-design-spec/tree/master/Examples/1_sidebar+REDLINES.png)
-![example-2](https://github.com/aditshukla/mobile-design-spec/tree/master/Examples/2_feed+REDLINES.png)
+![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.png)
+![example-2](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/2_feed+REDLINES.png)
 
 #### Positioning & Margin
 
@@ -115,5 +115,5 @@ In order to describe the font style being used within each text area, simply add
 When outlining the size and position of how to use an asset, you should account for the translucent/transparent areas within the assets.
 
 - Example
-	- Notice how the badge outline withint he sidebar has extra spacing outside of the shape that is reflected within the asset: ![example-1](https://github.com/aditshukla/mobile-design-spec/tree/master/Examples/1_sidebar+REDLINES.png)
-	- ![sidebar_badge.png](https://github.com/aditshukla/mobile-design-spec/tree/master/assets/sidebar_badge.png)
+	- Notice how the badge outline withint he sidebar has extra spacing outside of the shape that is reflected within the asset: ![example-1](https://raw.github.com/aditshukla/mobile-design-spec/master/Examples/1_sidebar+REDLINES.png)
+	- ![sidebar_badge.png](https://raw.github.com/aditshukla/mobile-design-spec/master/assets/sidebar_badge.png)
