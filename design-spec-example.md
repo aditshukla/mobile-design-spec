@@ -34,6 +34,7 @@
 - background: sidebar-bg.png
 - cell backgrounds: sidebar-div.png
 	- pressed: [$hootie-red](#application-colors)
+- badge inset (sidebar_badge.png): (3pt, 2pt, 5pt, 2pt)
 
 <a name="1_sidebar"></a>
 ### 2. Following ###

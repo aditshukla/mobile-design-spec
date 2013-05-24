@@ -52,9 +52,9 @@ If your design elements have any part of them that can fluidly expand . Usually,
 
 - Example: 
 	- Badge background asset that can be stretched:
-	- sidebar_badge.png
+	- [sidebar_badge.png](tree/master/assets/sidebar_badge.png)
 	- Stretch Insets: (3pt, 2pt, 5pt, 2pt)
-	- [![example](../Examples/stretchable_example.png)]
+	- [![example](tree/master/Examples/stretchable_example.png)]
 	- Notice how the middle portion of this asset has a lot of visual information that repeats. As a result, the asset can be reduced in width so that we have a 1 point (2px) slice of the asset that we will stretch when the asset expands.
 
 #### Tiling Assets
@@ -62,7 +62,7 @@ In the pursuit of further reducing the space your app takes, you should use a ti
 
 - Example
 	- sidebar_bg.png
-	- [![example](Assets/sidebar_bg.png)]
+	- [![example](tree/master/Assets/sidebar_bg.png)]
 	- The texture I used for the sidebar background tiles every 128 pixels. As a result, I was able to cut out just a 64x64pt slice of the background asset that I can instruct the developer to tile in that view.
 
 ### Naming Assets
@@ -78,8 +78,8 @@ In our development process, I’ve found it helpful to follow the subsequent pat
 
 - Example:
 	- For assets specific to a screen, such as the normal and pressed states for the icons in the sidebar, they should be named as:
-	- [sidebar_ic_tweets_normal.png](Assets/sidebar_ic_tweets_normal.png)
-	- [sidebar_ic_tweets_pressed.png](Assets/sidebar_ic_tweets_pressed.png)
+	- [sidebar_ic_tweets_normal.png](tree/master/Assets/sidebar_ic_tweets_normal.png)
+	- [sidebar_ic_tweets_pressed.png](tree/master/Assets/sidebar_ic_tweets_pressed.png)
 
 #### Some helpful shorthands:
 - Icon: **ic**
@@ -98,12 +98,21 @@ If you are slicing buttons, cell backgrounds, or any other UI elements with diff
 - (Optional) After a user taps on an element and it becomes active: active 
 - (Android) When a user uses a scroll wheel to focuse on an element: focused
 
-### Redlining
+### Redlining & Speccing
 #### Examples
-![example-1](Examples/1_sidebar+REDLINES.png)
-![example-2](Examples/2_feed+REDLINES.png)
+![example-1](tree/master/Examples/1_sidebar+REDLINES.png)
+![example-2](tree/master/Examples/2_feed+REDLINES.png)
 
 #### Text Areas
-To describe how to Both iOS and Android render fonts slightly differently than Photoshop. When designing with system fonts this isn't too much of an issue, however this can become troublesome when importing custom fonts. 
+To describe how where to place text and the padding around it, you must work with the developer to determine how iOS is rendering the ascender height of a font. This is because a text element is positioned from the top and left edges of the box around the text. When designing with system fonts this isn't too much of an issue, however this can become troublesome when importing custom fonts as the ascender height can be seemingly arbitrary font to font. 
 
-####
+In order to describe the font style being used within each text area, simply add the font variable you have laid out in the design spec. If you find that it's unnecessary to create an entire new font variable because of a slight variation, you can include details within the design spec.
+
+#### Assets
+When outlining the size and position of how to use an asset, you should account for the translucent/transparent areas within the assets.
+
+- Example
+	- Notice how the badge outline withint he sidebar has extra spacing outside of the shape that is reflected within the asset: ![example-1](tree/master/Examples/1_sidebar+REDLINES.png)
+	- ![sidebar_badge.png](tree/master/assets/sidebar_badge.png)
+
+#### 
